@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Today is {{td}}</h1>
+        <h2>
+            {% for day in days_of_week %}
+            {{day}}
+            {% endfor %} </h2>
+        <h3> {{title}} is working!</h3>
+        {% for obj in object_list %}
+        {{ obj.title }} <br>
+        {{ obj.description }}<br>
+        {{ obj.updated }} <br>
+        {{ obj.timestamp }} <br>
+        {{ obj.id }} <br>
+        {% endfor %}
+    </body>
+</html>
+
